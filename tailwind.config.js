@@ -4,13 +4,15 @@ module.exports = {
     "*"
   ],
   theme: {
-    extend: {},
-  },
-  plugins: [],
-  fontFamily:{
+    extend: {
+      fontFamily:{
       Whitney:["Whitney"],
       Ginto:["Ginto"],
       ggSans:["ggSans"],
   },
+    },
+  },
+  plugins: [],
+  
 }
 
