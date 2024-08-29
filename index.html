@@ -6,7 +6,9 @@
     <title>Discord</title>
     <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <!-- wrapper -->
@@ -91,15 +93,102 @@
 
 
         <!-- next section  -->
-        <section>
-            <div class="w-11/12 max-w-[1200px] mx-auto">
+        <section class="bg-[#f6f6f6]">
+            <div class="w-11/12 max-w-[1200px] mx-auto py-32">
                 <h1 class="font-[800] font-['GintoNord'] text-[20px] leading-[19px] md:leading-[32px] text-left md:text-center md:text-[40px] py-8">RELIABLE TECH FOR STAYING CLOSE</h1>
                 <p class=" text-center px-28 text-xl">Low-latency voice and video feels like you're in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
                 <img src="./src/images/section4Image.svg" alt="" class=" w-full">
-                <h3 class=" font-ggSans text-center font-bold text-4xl">Ready to start your journey?</h3>
-                <button class=" bg-[#404eed] text-white text-xl rounded-full p-3 px-12 pl-10"><i class="fa-solid fa-download mr-2" aria-hidden="true"></i> <a href="#">Download for Mac</a></button>
+                <h3 class=" bg-[url(/src/images/section5Image.svg)] bg-center bg-no-repeat font-ggSans text-center py-4 font-bold text-4xl">Ready to start your journey?</h3>
+                <button class=" bg-[#404eed] text-white text-xl rounded-full p-3 px-12 pl-10 flex gap-3 mx-auto my-10 h-[60px] items-center"><i data-feather='download' class="inline "></i><a href="#">Download for Mac</a></button>
             </div>
         </section>
+
+
+        <!-- footer section  -->
+        <footer class=" bg-[#23272a]">
+            <div class=" w-11/12 max-w-[1200px] flex gap-4 mx-auto justify-between py-16 relative md:flex-wrap">
+
+                <!-- 1st  -->
+                <div class=" flex flex-col gap-4">
+                    <h3 class="text-[#404eed] font-bold text-3xl">IMAGINE A <br>PLACE</h3>
+                    <div class="text-white flex justify-between">
+                        <i data-feather='twitter' ></i>
+                        <i data-feather='instagram'></i>
+                        <i data-feather='facebook'></i>
+                        <i data-feather='youtube'></i>
+                    </div>
+                </div>
+
+                <!-- 2nd -->
+
+                <div class=" flex flex-col gap-2">
+                    <p class=" text-[#404eed]">Product</p>
+                    <ul class="space-y-2">
+                        <li><a href="#" class=" hover:underline text-white">Download</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Nitro</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Status</a></li>
+                    </ul>
+                </div>
+
+                <!-- 3rd  -->
+                <div class=" flex flex-col gap-2">
+                    <p class=" text-[#404eed]">Company</p>
+                    <ul class="space-y-2">
+                        <li><a href="#" class=" hover:underline text-white">About</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Jobs</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Branding</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Newsroom</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- 4th  -->
+                
+                <div class=" flex flex-col gap-2">
+                    <p class=" text-[#404eed]">Resources</p>
+                    <ul class=" space-y-2">
+                        <li><a href="#" class=" hover:underline text-white">Colleges</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Support</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Safety</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Blog</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Feedback</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Developers</a></li>
+                        <li><a href="#" class=" hover:underline text-white">StreamKit</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Creators</a></li>
+                    </ul>
+                </div>
+
+
+
+                <!-- 5th  -->
+                <div class=" flex flex-col gap-2">
+                    <p class=" text-[#404eed]">Policies</p>
+                    <ul class="space-y-2">
+                        <li><a href="#" class=" hover:underline text-white">Terms</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Privacy</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Cookie Settings</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Guidelines</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Acknowledgements</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Licenses</a></li>
+                        <li><a href="#" class=" hover:underline text-white">Moderation</a></li>
+                    </ul>
+                </div>
+
+                <!-- line  -->
+                
+                <div class=" w-full absolute bottom-0 bg-[#404eed] h-1"></div>
+
+            </div>
+
+            <div class=" w-11/12 max-w-[1200px] bg-[#23272a] flex justify-between mx-auto py-10">
+                <img src="./src/images/logo.svg" alt="">
+                <button class=" bg-[#404eed] text-white rounded-full p-2 px-4 text-sm group"><a href="#" class=" group-hover:cursor-pointer">Sign Up</a></button>
+            </div>
+        </footer>
     </div>
+
+    <script>
+        feather.replace();
+      </script>
 </body>
 </html>
